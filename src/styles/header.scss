@@ -292,6 +292,7 @@
       @include onTablet {
         display: block;
         min-width: 300px;
+        width: 300px;
       }
 
       @include onDesktop {
