@@ -77,19 +77,30 @@
       height: 1px;
       background-color: $menu-item-color;
     }
+
+    &-container {
+      width: 40px;
+    }
   }
 
   &__link {
     text-decoration: none;
+    color: $menu-item-color;
+
+    &__closer {
+      height: 100px;
+      width: 20px;
+    }
   }
 
   &-top {
     position: absolute;
     bottom: 42px;
     right: 0;
+    cursor: pointer;
   }
 
-  &__close {
+  &__closer {
     transition: transform 0.3s;
 
     &:hover {

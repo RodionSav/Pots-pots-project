@@ -8,6 +8,11 @@
   &__link {
     cursor: pointer;
     text-decoration: none;
+    color: $paragraph-color;
+
+    &-additional {
+      color: $title-color;
+    }
 
     &_menu {
       @include onDesktop {
@@ -62,6 +67,7 @@
   }
 
   &__title {
+    position: relative;
     margin: 0;
     @extend %Bebas;
     font-size: 36px;
@@ -69,6 +75,7 @@
     text-transform: uppercase;
     letter-spacing: 5.58px;
     -webkit-text-stroke: 0.6px $title-color;
+    z-index: 3;
 
     @include onTablet {
       position: absolute;
@@ -143,6 +150,7 @@
       line-height: 150%;
       transform: rotate(90deg);
       position: absolute;
+      transition: transform 0.3s;
 
       @include onPhone {
         right: -50px;
@@ -166,6 +174,10 @@
         bottom: -17px;
         left: 161px;
         transform: rotate(270deg);
+      }
+
+      &:hover {
+        transform: rotate(90deg) scale(1.2);
       }
     }
 

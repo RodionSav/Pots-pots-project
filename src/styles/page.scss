@@ -173,18 +173,14 @@
   }
 
   &-hover {
-    transition: transform 0.3s;
-
-    &:hover {
-      transform: scale(1.05);
-    }
+    @include hover(transform, scale(1.05));
 
     &_big {
-      transition: transform 0.3s;
+      @include hover(transform, scale(1.3));
+    }
 
-      &:hover {
-        transform: scale(1.3);
-      }
+    &_grey {
+      @include hover(color, $paragraph-color);
     }
   }
 }
