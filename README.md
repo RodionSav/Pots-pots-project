@@ -9,6 +9,6 @@ There is working version of my project:
 
 ## Installing
 * Fork and clone this repository
-* Run ```bash npm install in your terminal
-* Run ```bash npm start
+* Run ```bash npm install ``` in your terminal
+* Run ```bash npm start ```
   
